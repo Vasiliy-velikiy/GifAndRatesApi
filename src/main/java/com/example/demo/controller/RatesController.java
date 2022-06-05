@@ -23,8 +23,6 @@ public class RatesController {
 
     @GetMapping("/currency")
     public String createTwoRequest() {
-     // double difference  =  serviceForRates.createTwoRequests();
-
         String result=serviceForRates.createTwoRequests();
         return "redirect:" + result;
     }
